@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+:root {
+    --screen-lg: 78.15em; /* 1250px */
+    --screen-md: 61.25em; /* 980px */
+    --screen-sm: 37.5em; /* 600px */
+    --screen-xs: 31.25em; /* 500px */
+
+    --bg-blue-light: rgba(25, 156, 168, 1);
+    --bg-blue-dark: rgba(19, 128, 138, 1);
+    --color-dark: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+
+body {
+    font-family: Macondo, sans-serif;
+    font-weight: 400;
+    color: var(--color-dark);
+    background-color: var(--bg-blue-light);    
+}
+
+nav {
+    background-color: var(--bg-blue-dark);
+    margin-bottom: 2em;
+}
+
+body a, nav a:link, nav a:visited, nav a:hover, nav a:active {
+    text-decoration: none !important;
+    color: var(--color-dark) !important;
+}
+
+table tr {
+    border-color: var(--color-dark);
+}
+
+a.addNewTask {
+    color: #00cc88 !important;
+    border: 1px solid #00cc88;
+    border-radius: 0.5em;
+    padding: 0.4em;
+}
+
+a.addNewTask i {
+    font-size: 1.2em;
+}
+
+td.taskOptions a {
+    font-size: 1.15em;
+    border-radius: 50%;
+    margin: 0.2em;
+    padding: 0.3em 0.1em 0.2em 0.3em;
+}
+
+td.taskOptions a.editTask {        
+    color: blue !important;
+    border: 1px solid blue !important;
+}
+
+td.taskOptions a.deleteTask {
+    padding: 0.3em 0.4em 0.2em 0.3em;    
+    color: #e60000 !important;
+    border: 1px solid #e60000 !important;
+}
+
+td.taskOptions a.taskDetails {
+    color: #e6b800 !important;
+    border: 1px solid #e6b800 !important;
+}
+
+.back-arrow {
+    font-size: 1.6em;
+}
